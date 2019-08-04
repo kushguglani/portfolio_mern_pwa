@@ -16,11 +16,11 @@ app.get('/hikush',(req,res)=>{
 app.get('/', function (req, res) {
     res.sendFile('index.html');
 });
-// app.get('/resume_new.pdf', function (req, res) {
-//     res.sendFile('Resume_new.pdf');
-// });
-app.get('/resume_new.docx', function (req, res) {
+app.get('/resume_new', function (req, res) {
     res.sendFile('Resume_new.pdf');
+});
+app.get('/resume_docx', function (req, res) {
+    res.sendFile('Resume_new.docx');
 });
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
